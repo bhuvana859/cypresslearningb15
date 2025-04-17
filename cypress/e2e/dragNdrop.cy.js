@@ -1,4 +1,3 @@
-///<reference types="cypress"/>
 
 describe('Automation - Working With Drag and Drop', function () {
 
