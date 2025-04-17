@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:21:53.741Z",
+    "end": "2025-04-16T06:22:20.850Z",
+    "duration": 27109,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa2db83d-e65f-4c95-baae-4d2ffa4d2fa6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\windows.cy.js",
+      "file": "cypress\\e2e\\windows.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ccf200ea-7fb3-4776-8fac-1beff1508054",
+          "title": "Example shows how to work with browser windows.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Example shows how to work witn button that opens new tab without \"target: _blank\" and \"href\" attributes.",
+              "fullTitle": "Example shows how to work with browser windows. Example shows how to work witn button that opens new tab without \"target: _blank\" and \"href\" attributes.",
+              "timedOut": null,
+              "duration": 20587,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\windows.cy.js\"\n}",
+              "code": "Cypress.on(\"uncaught:exception\", () => {\n  return false;\n});\ncy.visit('https://demoqa.com/browser-windows', {\n  onBeforeLoad(win) {\n    cy.stub(win, 'open');\n  }\n});\ncy.log(\"loginsteps\");\ncy.get('#tabButton').click();\ncy.window().its('open').should('be.called');\ncy.visit('https://demoqa.com/sample');\ncy.get(\"#sampleHeading\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "513a1f16-02f9-4c7e-803b-712b71ece2c0",
+              "parentUUID": "ccf200ea-7fb3-4776-8fac-1beff1508054",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "513a1f16-02f9-4c7e-803b-712b71ece2c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20587,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

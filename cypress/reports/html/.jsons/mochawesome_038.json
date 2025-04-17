@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:04:38.011Z",
+    "end": "2025-04-16T06:04:46.781Z",
+    "duration": 8770,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d57719ab-21f9-4f87-b74a-5b15e4178abb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkbox1.cy.js",
+      "file": "cypress\\e2e\\checkbox1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df5af0f2-1df5-42b3-b1c7-1054d82d3e6f",
+          "title": "checkbox Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Working with Check boxes",
+              "fullTitle": "checkbox Test Working with Check boxes",
+              "timedOut": null,
+              "duration": 3363,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\checkbox1.cy.js\"\n}",
+              "code": "cy.visit(\"https://register.rediff.com/register/register.php\");\n//CheckBox \n//        cy.get('input[name^=chk_altemail]').check().should('be.checked');\n//         cy.wait(10000)\n//         cy.xpath('//input[starts-with(@name,\"chk_altemail\")]').uncheck().should('not.be.checked');\n//Radio \n//cy.xpath('//input[@value=\"f\"]', { timeout: 20000 }).check().should('be.checked');\n//Uncheck will not work for Radio\n//Dropdowns\n//3 ways we can handle \n// by  Text\n// cy.get('select[name*=\"DOB_Month\"]').select('MAY')\n//   cy.xpath('//select[starts-with(@name,\"DOB_Month\")]').select(\"APR\").should(\"have.value\", \"04\" )\n//     cy.wait(5000)\n//  by value\n// cy.get('select[name*=\"DOB_Month\"]').select('JUN').should(\"have.value\", \"06\" )\n// cy.wait(5000)\n//Value\ncy.get('select[name*=\"DOB_Month\"]').select(\"09\").should(\"have.value\", \"09\");\n//cy.wait(5000)\n//cy.get('select[name*=\"DOB_Month\"]').select('12')\n// Index \n// cy.xpath('select[name*=\"DOB_Month\"]').select(2).should(\"have.value\", \"02\" )\n// cy.wait(5000)\n//cy.get('select[name*=\"DOB_Month\"]').select(3)",
+              "err": {},
+              "uuid": "72a3d839-1433-40eb-94bf-2617f4e630dd",
+              "parentUUID": "df5af0f2-1df5-42b3-b1c7-1054d82d3e6f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "72a3d839-1433-40eb-94bf-2617f4e630dd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3363,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

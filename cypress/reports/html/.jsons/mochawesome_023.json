@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2025-04-16T03:16:15.904Z",
+    "end": "2025-04-16T03:17:50.048Z",
+    "duration": 94144,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "545c6c5f-27c7-451c-9a84-aa8b1cdddb47",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c1f7c091-9c9c-4309-85d7-5664055b7c42",
+          "title": "Verify login module functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify add  jobtitle functionalty with valid details",
+              "fullTitle": "Verify login module functionality Verify add  jobtitle functionalty with valid details",
+              "timedOut": null,
+              "duration": 23220,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\login.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.xpath(_loginpage.default.userNameInput()).type(_login.default.username);\ncy.get(_loginpage.default.passwordInput()).type(_login.default.password);\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains('Dashboard').should('be.visible');\n// assertions\n// cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')\n//or\n// cy.url().should('include', 'web/index.php/dashboard/index')\n//or",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/login.cy.js:9:11)",
+                "diff": null
+              },
+              "uuid": "4f37ae9f-3be6-4de5-b1ec-0549987df0b5",
+              "parentUUID": "c1f7c091-9c9c-4309-85d7-5664055b7c42",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify add  jobtitle functionalty with valid details",
+              "fullTitle": "Verify login module functionality Verify add  jobtitle functionalty with valid details",
+              "timedOut": null,
+              "duration": 21648,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\login.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.xpath(_loginpage.default.userNameInput()).type('adminn');\ncy.get(_loginpage.default.passwordInput()).type('admin123');\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains(_loginpage.default.loginErrorMessage()).should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/login.cy.js:24:11)",
+                "diff": null
+              },
+              "uuid": "239a60b4-98da-4e8c-9258-44321ef07403",
+              "parentUUID": "c1f7c091-9c9c-4309-85d7-5664055b7c42",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify add  jobtitle functionalty with valid details",
+              "fullTitle": "Verify login module functionality Verify add  jobtitle functionalty with valid details",
+              "timedOut": null,
+              "duration": 21613,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\login.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.xpath(_loginpage.default.userNameInput()).type('admin');\ncy.get(_loginpage.default.passwordInput()).type('admin1234');\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains(_loginpage.default.loginErrorMessage()).should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/login.cy.js:34:7)",
+                "diff": null
+              },
+              "uuid": "681df58a-673f-46ac-a862-11ed36b51122",
+              "parentUUID": "c1f7c091-9c9c-4309-85d7-5664055b7c42",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify add  jobtitle functionalty with valid details",
+              "fullTitle": "Verify login module functionality Verify add  jobtitle functionalty with valid details",
+              "timedOut": null,
+              "duration": 21760,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\login.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.xpath(_loginpage.default.userNameInput()).type('adminn');\ncy.get(_loginpage.default.passwordInput()).type('admin12355');\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains(_loginpage.default.loginErrorMessage()).should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/login.cy.js:44:7)",
+                "diff": null
+              },
+              "uuid": "642d71a2-803b-43ae-9b8c-1a736d04761c",
+              "parentUUID": "c1f7c091-9c9c-4309-85d7-5664055b7c42",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4f37ae9f-3be6-4de5-b1ec-0549987df0b5",
+            "239a60b4-98da-4e8c-9258-44321ef07403",
+            "681df58a-673f-46ac-a862-11ed36b51122",
+            "642d71a2-803b-43ae-9b8c-1a736d04761c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 88241,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

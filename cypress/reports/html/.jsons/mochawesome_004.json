@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T03:09:48.982Z",
+    "end": "2025-04-16T03:09:59.245Z",
+    "duration": 10263,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1aaa25ca-ea00-400b-a868-3e6b7cdf79f3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\alertsexmp1.cy.js",
+      "file": "cypress\\e2e\\alertsexmp1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+          "title": "Automation - Working with Alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Test Case - Simple Alert",
+              "fullTitle": "Automation - Working with Alerts Cypress Test Case - Simple Alert",
+              "timedOut": null,
+              "duration": 2559,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\alertsexmp1.cy.js\"\n}",
+              "code": "//simple allert\ncy.contains('Click for JS Alert').click();\ncy.on('window:alert', () => {\n  return true;\n});",
+              "err": {},
+              "uuid": "fc84d4dc-1aac-41d9-a7bf-6a8ce312fdc1",
+              "parentUUID": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - test Confirm Alert - Cancel",
+              "fullTitle": "Automation - Working with Alerts Cypress Test Case - test Confirm Alert - Cancel",
+              "timedOut": null,
+              "duration": 566,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\alertsexmp1.cy.js\"\n}",
+              "code": "//confirm\ncy.contains('Click for JS Confirm').click();\ncy.on('window:confirm', () => {\n  return false;\n});",
+              "err": {},
+              "uuid": "30d3d2e2-c7bd-488f-a2a8-a368a268cf09",
+              "parentUUID": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - test Confirm Alert - Ok",
+              "fullTitle": "Automation - Working with Alerts Cypress Test Case - test Confirm Alert - Ok",
+              "timedOut": null,
+              "duration": 557,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\alertsexmp1.cy.js\"\n}",
+              "code": "cy.contains('Click for JS Confirm').click();\ncy.on('window:confirm', () => {\n  return true;\n});",
+              "err": {},
+              "uuid": "604bc9ca-85de-49ba-b5a0-bd942506679b",
+              "parentUUID": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - test prompt Alert - Ok",
+              "fullTitle": "Automation - Working with Alerts Cypress Test Case - test prompt Alert - Ok",
+              "timedOut": null,
+              "duration": 553,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\alertsexmp1.cy.js\"\n}",
+              "code": "cy.window().then($win => {\n  cy.stub($win, 'prompt').returns(\"Ravi kumar\");\n  cy.contains('Click for JS Prompt').click();\n});",
+              "err": {},
+              "uuid": "37603650-c6b8-4786-9342-4dda1a5c8db7",
+              "parentUUID": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - test prompt Alert - Cancel",
+              "fullTitle": "Automation - Working with Alerts Cypress Test Case - test prompt Alert - Cancel",
+              "timedOut": null,
+              "duration": 534,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\alertsexmp1.cy.js\"\n}",
+              "code": "cy.window().then($win => {\n  cy.stub($win, 'prompt').callsFake(() => null);\n  cy.contains('Click for JS Prompt').click();\n});",
+              "err": {},
+              "uuid": "93fae7d8-b9f6-4668-8f8d-f54141d6d54b",
+              "parentUUID": "56c0cf72-3256-4ffe-8ec5-6ae8ceaeb4d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc84d4dc-1aac-41d9-a7bf-6a8ce312fdc1",
+            "30d3d2e2-c7bd-488f-a2a8-a368a268cf09",
+            "604bc9ca-85de-49ba-b5a0-bd942506679b",
+            "37603650-c6b8-4786-9342-4dda1a5c8db7",
+            "93fae7d8-b9f6-4668-8f8d-f54141d6d54b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4769,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

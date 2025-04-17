@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:06:46.048Z",
+    "end": "2025-04-16T06:07:27.173Z",
+    "duration": 41125,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a190152-258d-4d8b-b069-a4469066990e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\datadriventestingforaddemployee.cy.js",
+      "file": "cypress\\e2e\\datadriventestingforaddemployee.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a8d6dd0a-64a2-4ca7-9d20-8558eeb93c04",
+          "title": "Automation - Working With Data driven testing json ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Test Case - Understanding Data driven testing json ",
+              "fullTitle": "Automation - Working With Data driven testing json  Cypress Test Case - Understanding Data driven testing json ",
+              "timedOut": null,
+              "duration": 14891,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\datadriventestingforaddemployee.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(_loginpage.default.userNameInput()).type(_login.default.username);\ncy.get(_loginpage.default.passwordInput()).type(_login.default.password);\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains('Dashboard').should('be.visible');\ncy.contains(_dashboard.default.pimMenuItem()).click();\ncy.contains(_addemployee.default.addemployeeInput()).click();\ncy.get(_addemployee.default.firstNameInput()).type(data.firstname);\ncy.get(_addemployee.default.lastNameInput()).type(data.lastname);",
+              "err": {},
+              "uuid": "1d6e9c6e-9b68-4d66-b3cd-bd819b04cc81",
+              "parentUUID": "a8d6dd0a-64a2-4ca7-9d20-8558eeb93c04",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - Understanding Data driven testing json ",
+              "fullTitle": "Automation - Working With Data driven testing json  Cypress Test Case - Understanding Data driven testing json ",
+              "timedOut": null,
+              "duration": 9399,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\datadriventestingforaddemployee.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(_loginpage.default.userNameInput()).type(_login.default.username);\ncy.get(_loginpage.default.passwordInput()).type(_login.default.password);\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains('Dashboard').should('be.visible');\ncy.contains(_dashboard.default.pimMenuItem()).click();\ncy.contains(_addemployee.default.addemployeeInput()).click();\ncy.get(_addemployee.default.firstNameInput()).type(data.firstname);\ncy.get(_addemployee.default.lastNameInput()).type(data.lastname);",
+              "err": {},
+              "uuid": "d0aab042-8348-420f-bb1e-e0a863c994af",
+              "parentUUID": "a8d6dd0a-64a2-4ca7-9d20-8558eeb93c04",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - Understanding Data driven testing json ",
+              "fullTitle": "Automation - Working With Data driven testing json  Cypress Test Case - Understanding Data driven testing json ",
+              "timedOut": null,
+              "duration": 9418,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\datadriventestingforaddemployee.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(_loginpage.default.userNameInput()).type(_login.default.username);\ncy.get(_loginpage.default.passwordInput()).type(_login.default.password);\ncy.get(_loginpage.default.loginBtn()).click();\ncy.contains('Dashboard').should('be.visible');\ncy.contains(_dashboard.default.pimMenuItem()).click();\ncy.contains(_addemployee.default.addemployeeInput()).click();\ncy.get(_addemployee.default.firstNameInput()).type(data.firstname);\ncy.get(_addemployee.default.lastNameInput()).type(data.lastname);",
+              "err": {},
+              "uuid": "72dbf60d-22d0-4ed5-97a4-bc285e4f60df",
+              "parentUUID": "a8d6dd0a-64a2-4ca7-9d20-8558eeb93c04",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d6e9c6e-9b68-4d66-b3cd-bd819b04cc81",
+            "d0aab042-8348-420f-bb1e-e0a863c994af",
+            "72dbf60d-22d0-4ed5-97a4-bc285e4f60df"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33708,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

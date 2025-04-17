@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-16T03:19:02.063Z",
+    "end": "2025-04-16T03:19:23.255Z",
+    "duration": 21192,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6cbab9cf-e877-4f0f-9066-de1eb92f2e48",
+      "title": "",
+      "fullFile": "cypress\\e2e\\readandwritefile.cy.js",
+      "file": "cypress\\e2e\\readandwritefile.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f54281f-01a6-4724-b286-f10f06897927",
+          "title": "Automation - Write file and Read file ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Test Case - Validation of Data both Text file and Json ",
+              "fullTitle": "Automation - Write file and Read file  Cypress Test Case - Validation of Data both Text file and Json ",
+              "timedOut": null,
+              "duration": 20447,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\readandwritefile.cy.js\"\n}",
+              "code": "cy.readFile('cypress/fixtures/addjobtitle.json').should('exist');\ncy.readFile('cypress/fixtures/addemployee/addemployeeone.json').its('firstname').should('eq', 'harish');\ncy.readFile('cypress/fixtures/addemployee/addemployeetwo.json').its('firstname').should('eq', 'anil');\ncy.readFile('cypress/fixtures/addjobtitle.json').should('contain', 'test job title');\n// cy.readFile('cypress/fixtures/module1/test.txt').should('contain','Raju123\\nCypress Trainer')",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: object tested must be an array, a map, an object, a set, a string, or a weakset, but object given",
+                "estack": "AssertionError: Timed out retrying after 20000ms: object tested must be an array, a map, an object, a set, a string, or a weakset, but object given\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/readandwritefile.cy.js:36:55)",
+                "diff": null
+              },
+              "uuid": "b34cc5e1-594b-48ad-9a80-3ddc39b4f22f",
+              "parentUUID": "7f54281f-01a6-4724-b286-f10f06897927",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b34cc5e1-594b-48ad-9a80-3ddc39b4f22f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20447,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

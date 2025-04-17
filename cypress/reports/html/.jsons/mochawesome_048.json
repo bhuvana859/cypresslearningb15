@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2025-04-16T06:10:53.751Z",
+    "end": "2025-04-16T06:10:55.675Z",
+    "duration": 1924,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59159bbd-0135-4622-a85f-c6d747428686",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fileuploadanddownload2.cy.js",
+      "file": "cypress\\e2e\\fileuploadanddownload2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4c861957-81c1-421a-a1ba-dce5c1f61cdb",
+          "title": "Automation - File Upload Example - 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Test Case - Understanding upload file - 2",
+              "fullTitle": "Automation - File Upload Example - 2 Cypress Test Case - Understanding upload file - 2",
+              "timedOut": null,
+              "duration": 545,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\fileuploadanddownload2.cy.js\"\n}",
+              "code": "cy.visit('https://the-internet.herokuapp.com/upload');\n//cy.get('#file-upload').attachFile('module1/test.txt');\ncy.fileupload('//*[@id=\"file-upload\"]', 'module1/test.txt');\ncy.get('#file-submit').click();\ncy.get('#uploaded-files').contains('test.txt');",
+              "err": {
+                "message": "TypeError: cy.fileupload is not a function",
+                "estack": "TypeError: cy.fileupload is not a function\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/fileuploadanddownload2.cy.js:12:9)",
+                "diff": null
+              },
+              "uuid": "2ad940ef-8ddc-450a-9e2d-5813b1f534fd",
+              "parentUUID": "4c861957-81c1-421a-a1ba-dce5c1f61cdb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - Understanding Download file",
+              "fullTitle": "Automation - File Upload Example - 2 Cypress Test Case - Understanding Download file",
+              "timedOut": null,
+              "duration": 554,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\fileuploadanddownload2.cy.js\"\n}",
+              "code": "cy.downloadFile(\"https://images.unsplash.com/photo-1618281377501-88c2328cbb9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW4lMjBwYXJyb3R8ZW58MHx8MHx8&w=1000&q=80\", \"cypress/Raju\", \"parrot.jpg\");\ncy.readFile('cypress/Raju/parrot.jpg').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nD:\\cypress learning B15\\cypress.config.js\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nD:\\cypress learning B15\\cypress.config.js\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:52628/__cypress/runner/cypress_runner.js:135168:72)\n    at tryCatcher (http://localhost:52628/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52628/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:52628/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:52628/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:52628/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:52628/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:52628/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-learning-b15/./node_modules/cypress-downloadfile/lib/downloadFileCommand.js:5:0)",
+                "diff": null
+              },
+              "uuid": "5b295ca7-63e6-4bc3-a4b5-e857617a9274",
+              "parentUUID": "4c861957-81c1-421a-a1ba-dce5c1f61cdb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Test Case - Understanding Download file - PDF ",
+              "fullTitle": "Automation - File Upload Example - 2 Cypress Test Case - Understanding Download file - PDF ",
+              "timedOut": null,
+              "duration": 431,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\fileuploadanddownload2.cy.js\"\n}",
+              "code": "cy.downloadFile(\"https://istqb-main-web-prod.s3.amazonaws.com/media/documents/ISTQB-CTFL_Syllabus_2018_v3.1.1.pdf\", \"cypress/downloads\", \"ISTQBsyllabus.pdf\");\ncy.readFile('cypress/Raju/ISTQBsyllabus.pdf').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nD:\\cypress learning B15\\cypress.config.js\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nD:\\cypress learning B15\\cypress.config.js\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:52628/__cypress/runner/cypress_runner.js:135168:72)\n    at tryCatcher (http://localhost:52628/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52628/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:52628/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:52628/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:52628/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:52628/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:52628/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-learning-b15/./node_modules/cypress-downloadfile/lib/downloadFileCommand.js:5:0)",
+                "diff": null
+              },
+              "uuid": "95d50add-a780-4cd7-989e-699a6e567888",
+              "parentUUID": "4c861957-81c1-421a-a1ba-dce5c1f61cdb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2ad940ef-8ddc-450a-9e2d-5813b1f534fd",
+            "5b295ca7-63e6-4bc3-a4b5-e857617a9274",
+            "95d50add-a780-4cd7-989e-699a6e567888"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1530,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

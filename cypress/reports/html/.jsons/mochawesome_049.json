@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-16T06:11:08.879Z",
+    "end": "2025-04-16T06:11:10.753Z",
+    "duration": 1874,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0cfbff8f-e888-4d77-b80d-9d7f32030a8a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fixtureexone.cy.js",
+      "file": "cypress\\e2e\\fixtureexone.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9cc40bf3-36e3-465a-a41f-aa6d9a8b68ec",
+          "title": "Understanding Fixtures",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate register flow ",
+              "fullTitle": "Understanding Fixtures Validate register flow ",
+              "timedOut": null,
+              "duration": 1626,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\fixtureexone.cy.js\"\n}",
+              "code": "cy.visit('https://shop.demoqa.com/my-account/');\n//cy.wait(40000)\ncy.get(\"#reg_username\").type(_register.default.username);\ncy.get(\"#reg_email\").type(_register.default.emailaddress);\ncy.get(\"#reg_password\").type(_register.default.weakpassword);\ncy.get('button[name=\"register\"]').should(\"be.disabled\");\n//or\n//cy.get('locator').should('have.attr', 'attributename', 'Attributevalue');\ncy.get('button[name=\"register\"]').should('have.attr', 'disabled', 'disabled');\ncy.get(\"#reg_password\").clear();\ncy.wait(5000);\ncy.get(\"#reg_password\").type(_register.default.strongpassword);\ncy.wait(5000);\ncy.get('button[name=\"register\"]').click();\n//cy.get('locator').should('have.attr', 'attributename', 'Attributevalue');\ncy.get(\"#username\").should('have.attr', 'value', _register.default.username);\n//or\ncy.get(\"#username\").should(\"have.value\", _register.default.username);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://shop.demoqa.com/my-account/\n\nThe response we received from your web server was:\n\n  > 500: Internal Server Error\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://shop.demoqa.com/my-account/\n\nThe response we received from your web server was:\n\n  > 500: Internal Server Error\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:52628/__cypress/runner/cypress_runner.js:131634:76)\n    at visitFailedByErr (http://localhost:52628/__cypress/runner/cypress_runner.js:131049:12)\n    at <unknown> (http://localhost:52628/__cypress/runner/cypress_runner.js:131617:13)\n    at tryCatcher (http://localhost:52628/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52628/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:52628/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:52628/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:52628/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:52628/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:52628/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:52628/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-learning-b15/./cypress/e2e/fixtureexone.cy.js:11:9)",
+                "diff": null
+              },
+              "uuid": "95192bc9-7e11-4c19-a4dd-be57c38ffca3",
+              "parentUUID": "9cc40bf3-36e3-465a-a41f-aa6d9a8b68ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "95192bc9-7e11-4c19-a4dd-be57c38ffca3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1626,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+1 node_modules
+2 cypress.config.js
+3 package-lock.json
+4 package.json
+5 cypress/chethan
+6 cypress/plugins
+7 cypress/screenshots
+8 cypress/videos
+9 cypress/pageobjects
+10 cypress/reports/html

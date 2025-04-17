@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:12:43.805Z",
+    "end": "2025-04-16T06:12:53.030Z",
+    "duration": 9225,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5ab2d2a3-7fdc-4f6a-8093-4bb3c8251072",
+      "title": "",
+      "fullFile": "cypress\\e2e\\iframes.cy.js",
+      "file": "cypress\\e2e\\iframes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f55cf32a-a39a-4483-925e-12a23b3373a8",
+          "title": "Automation - Working With Iframe",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select Radio Button",
+              "fullTitle": "Automation - Working With Iframe Select Radio Button",
+              "timedOut": null,
+              "duration": 2682,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\iframes.cy.js\"\n}",
+              "code": "cy.visit(\"https://jqueryui.com/checkboxradio/\");\ncy.get('iframe[class=\"demo-frame\"]').then($iframe => {\n  let checkbox1 = $iframe.contents().find('label[for=\"checkbox-1\"]');\n  cy.wrap(checkbox1).click();\n});\n// cy.contains(\"Download\").click()",
+              "err": {},
+              "uuid": "1f061998-5867-43fc-9842-f7fcb2a2ca37",
+              "parentUUID": "f55cf32a-a39a-4483-925e-12a23b3373a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f061998-5867-43fc-9842-f7fcb2a2ca37"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2682,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

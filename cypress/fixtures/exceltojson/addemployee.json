@@ -1,0 +1,42 @@
+
+
+[
+    {
+        "name": "demoqa/registerone",
+        "context": "Raju"
+    },
+    {
+        "name": "demoqa/registertwo",
+        "context": "Ranjitha"
+    },
+    {
+        "name": "demoqa/registerthree",
+        "context": "Manjunath"
+    },
+
+ {   
+    "name": "demoqa/registerthree",
+    "context": "harish"
+
+},
+{   
+    "name": "demoqa/registerthree",
+    "context": "anil"
+
+},
+{   
+    "name": "demoqa/registerthree",
+    "context": "Manjunathgowda"
+
+},
+{   
+    "name": "demoqa/registerthree",
+    "context": "chethan"
+
+},
+{   
+    "name": "demoqa/registerthree",
+    "context": "bhuvana"
+
+}
+]

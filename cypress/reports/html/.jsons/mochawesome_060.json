@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:19:52.436Z",
+    "end": "2025-04-16T06:20:03.105Z",
+    "duration": 10669,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "121c7482-eecc-4f6b-ad93-38eb05a2acb3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\shadow.cy.js",
+      "file": "cypress\\e2e\\shadow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b765afe6-e4c3-40aa-a21d-82ce498df8ed",
+          "title": "Automation - Working with Shadowroot elements 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Test Case - Shadow",
+              "fullTitle": "Automation - Working with Shadowroot elements 2 Cypress Test Case - Shadow",
+              "timedOut": null,
+              "duration": 982,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\shadow.cy.js\"\n}",
+              "code": "cy.visit('http://watir.com/examples/shadow_dom.html');\n// cy.get(\"input[type='text']\").type(\"cypress\");\ncy.get('#shadow_host').shadow().find(\"input[type='text']\").type(\"chethan\");\ncy.get('#shadow_host').shadow().find('input[type=\"checkbox\"]').check();",
+              "err": {},
+              "uuid": "032b6660-e15c-473d-b523-b396dfa4c091",
+              "parentUUID": "b765afe6-e4c3-40aa-a21d-82ce498df8ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "032b6660-e15c-473d-b523-b396dfa4c091"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 982,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

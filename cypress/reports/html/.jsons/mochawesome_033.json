@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-16T06:01:42.809Z",
+    "end": "2025-04-16T06:02:08.152Z",
+    "duration": 25343,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8dbedcb8-c5a7-43ed-9a51-2ac6b47a6bf1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\addemployee.cy.js",
+      "file": "cypress\\e2e\\addemployee.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "052f81f7-1922-48db-8be5-d17492b7d679",
+          "title": "Verify add employee functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify add employee  with valid details",
+              "fullTitle": "Verify add employee functionality Verify add employee  with valid details",
+              "timedOut": null,
+              "duration": 20416,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\addemployee.cy.js\"\n}",
+              "code": "cy.login(_login.default.username, _login.default.password);\n// cy.login(\"Admin\",\"admin123\")\n// cy.login(logindata.username,logindata.password)\n// cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\")\n// cy.get(login.userNameInput()).type('admin')\n// cy.get(login.passwordInput()).type('admin123')\n// cy.get(login.loginBtn()).click()\n// //assertions\ncy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\n//or\ncy.url().should('include', 'web/index.php/dashboard/index');\n//or\ncy.contains('Dashboard').should('be.visible');\ncy.contains(_dashboard.default.pimMenuItem()).click();\ncy.contains(_addemployee.default.addemployeeInput()).click();\ncy.get(_addemployee.default.firstNameInput()).type('ravikumar');\ncy.get(_addemployee.default.lastNameInput()).type('kumar');\ncy.get(_addemployee.default.submitBtn()).click();\n//Assertion\ncy.contains(_addemployee.default.successMessageInput()).should('be.visible');",
+              "err": {},
+              "uuid": "d9545d43-bb08-4daa-86f5-5e8dd9bc9fb0",
+              "parentUUID": "052f81f7-1922-48db-8be5-d17492b7d679",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9545d43-bb08-4daa-86f5-5e8dd9bc9fb0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20416,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
